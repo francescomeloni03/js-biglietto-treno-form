@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo Biglietto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="bg-warning">
+
+    <h3 class="d-flex justify-content-center mt-3 mb-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h3>
+
+<section class="d-flex justify-content-evenly">
+    <h5>Nome Cognome</h5>
+    <h5>Km da percorrere</h5>
+    <h5>Fascia d'eta</h5>
+</section>
+ 
+<section class="d-flex justify-content-evenly">
+    <input type="text" id="name" placeholder="Inserisci il tuo nome">
+    <input type="number" id="km" placeholder="Inserisci i km" >
+    <select id="eta">
+        <option value="minorenne">Minorenne</option>
+        <option value="maggiorenne">Maggiorenne</option>
+        <option value="senior">Senior</option>
+    </select>
+</section>
+<div class="d-flex justify-content-center mt-4 ">
+    <button id="calcola">Calcola</button>
+    <button id="reset">Annulla</button>
+</div>
+
+<h3 class="d-flex justify-content-center mt-3 mb-3">IL TUO BIGLIETTO</h3>
+
+
+    <div class="d-flex justify-content-center mt-4">
+        <table>
+            <thead>
+                <tr>
+                    <th>Passeggero</th>
+                    <th>Offerta</th>
+                    <th>Costo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="bigliettoPasseggero"></td>
+                    <td id="bigliettoOfferta"></td>
+                    <td id="bigliettoCosto"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
